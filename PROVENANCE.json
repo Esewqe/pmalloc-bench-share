@@ -1,0 +1,24 @@
+{
+  "suite": {
+    "repository": "https://github.com/daanx/mimalloc-bench",
+    "commit": "198cec2701676965970e8f0012897b8da304b3f2"
+  },
+  "mimalloc": {
+    "repository": "https://github.com/microsoft/mimalloc",
+    "version": "3.6.0",
+    "commit": "b18ab4eef383f655e760881b02eff8af02800879"
+  },
+  "old_pmalloc": {
+    "repository": "https://github.com/HCPP20334/pmalloc",
+    "commit": "2786365a7fcffaee8aa678060b86d40bfed02029",
+    "file": "allocators/old/pmalloc_posix.hpp",
+    "sha256": "ca20b1ee8b8484fc09059754a569c69ceeea3b25da3f70c6e1d5a43db6cd1783"
+  },
+  "new_pmalloc": {
+    "origin": "Unmodified user-provided pmalloc_posix.hpp snapshot; upstream commit unknown",
+    "file": "allocators/new/pmalloc_posix.hpp",
+    "sha256": "5f1b8e6b53ae822bfc84e6a58bdbe9eeae1f5ac6214a79ba36dca0412e3620ca"
+  },
+  "adapter": "The same external malloc-family ABI adapter is compiled against both headers. Neither allocator header is edited.",
+  "comparison": "Old and new pmalloc are measured together with mimalloc and glibc in fresh processes, sequentially, with allocator order balanced by a Williams square across every 4 runs. Results on another host need not match previous measurements."
+}

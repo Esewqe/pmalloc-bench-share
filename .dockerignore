@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!.dockerignore
+!run.py
+!report.py
+!preload.cpp
+!smoke.cpp
+!LICENSE-pmalloc
+!PROVENANCE.json
+!allocators/
+!allocators/old/
+!allocators/new/
+!allocators/old/pmalloc_posix.hpp
+!allocators/new/pmalloc_posix.hpp
